@@ -1,1 +1,12 @@
+
+<section class="detail" data-id="{{shop.Shop.shop_id}}">
 <h1 class="shopdetail">shop detail page</h1>
+
+<div ng-repeat="shop in shops">
+ <h6 class="shopname">Shop name:{{shop.Shop.shop_name}}</h6>
+ <img ng-src="{{shop.Shop.image_url_760x100}}" alt="" class="shopimage" /><button ng-click="addToFaves(shop)"><i class="fa fa-heart" ></i></button>
+
+  <h3 class="shopdescription">{{shop.Shop.policy_welcome}}</h3>
+</div>
+
+</section>

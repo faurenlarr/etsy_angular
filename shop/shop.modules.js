@@ -10,10 +10,7 @@ angular
     ])
     .config(function ($routeProvider) {
       $routeProvider
-        // .when('/shop', {
-        //   template: '<h1>Search by Shop</h1><a href="#/faves">see your favorites</a><a href="#/">Home</a>',
-        //   controller: 'ShopController'
-        // })
+        
         .when('/shoplist', {
           templateUrl: 'shop/views/list.html',
           controller: 'ShopController'

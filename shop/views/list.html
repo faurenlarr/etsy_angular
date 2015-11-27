@@ -1,16 +1,21 @@
 
-<h1 class='shops'>Shops</h1>
-<a href="#/faveslist">Favorites</a><a href="#/">Home</a>
-<!-- <div ng-repeat="boy in BoyFace"> -->
-  <!-- <h6 class="name">{{boy.title}}</h6>
-  <img ng-src="{{boy.image}}" alt="" />
-  <h6 class="price">price: {{boy.price}}</h6>
-  <button type="text" class="seedetails"><a href="#/customer/{{boy._id}}" >See Details</a></button>
-
-  <button type="text" ng-click="addToCart(boy)" class="add">ADD TO CART</button>
-  <a href="#/cart" ng-click="getBoy(boy)"><button type="text" class="gotocart" >GO TO CART</button></a> -->
-<!-- </div> -->
 <nav class="navbar">
+  <h1 class='shops'>Shops</h1>
+
+
   <input type="text" placeholder="search by shop" class="searchbar">
   <button class="search" type="submit">Submit</button>
+  <a href="#/faveslist" ><i class="fa fa-heart"></i></a><a href="#/"><i class="fa fa-home"></i></a>
 </nav>
+<div class="container">
+<div ng-repeat="shop in shops">
+  <section class="box">
+ <h6 class="shopname">{{shop.Shop.shop_name}}</h6>
+  <img ng-src="{{shop.Shop.image_url_760x100}}" alt="" class="shopimage" /><button ng-click="addToFaves(shop)"><i class="fa fa-heart" ></i></button>
+  <button type="text" class="seedetails"><a href="#/shop/{{shop.Shop.shop_id}}">See Details</a></button>
+  </section>
+</div>
+</div>
+
+
+</section>

@@ -4,10 +4,24 @@
 
     angular
     .module('faves')
-    .factory('FavesFactory',function ($http,_) {
-      var url = 'https://openapi.etsy.com/v2/listings/active?api_key=sd11pcbe4136lyad3rfv1l4y';
+    .factory('FavesService',function ($http) {
+      var url = 'https://tiny-tiny.herokuapp.com/collections/faves';
+
+      var addToFaves = function (shop) {
+                 $http.post(url, faves).then(function (res) {
+                   console.log(res);
+                 });
+              };
+
+            var getFaves = function(shop){
+            return $http.get(url);
+            };
 
 
+              return {
+                addToFaves: addToFaves,
+                getFaves: getFaves
+              };
 
 
       });
