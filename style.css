@@ -1,0 +1,19 @@
+body {
+  color: #f76400;
+  font-family: 'Roboto'; }
+
+a {
+  text-decoration: none;
+  margin: 20px;
+  color: black; }
+
+.eachpic {
+  border: 2px solid black;
+  width: 25%;
+  display: inline-block;
+  margin: 10px;
+  border-radius: 5px; }
+
+.container {
+  margin: 50px;
+  margin-left: 200px; }
