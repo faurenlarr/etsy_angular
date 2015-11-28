@@ -31,9 +31,14 @@
         return $http.get(urlOptions + "/" + shopId);
       };
 
+      var addToFaves = function (shop) {
+                 $http.post(url, shop).then(function (res) {
+                   console.log(res);
+                 });
+              };
 
       return {
-
+        addToFaves: addToFaves,
         getShops : getShops,
         getShop : getShop,
         seeDetails : seeDetails

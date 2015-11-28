@@ -16,5 +16,11 @@
                   console.log("custdetail" ,data);
                   $scope.shop = data;
                 });
+
+                $scope.addToFaves = function(shop) {
+                  FavesService.addToFaves(shop);
+                  alert('added to faves');
+
+                };
     });
 }());

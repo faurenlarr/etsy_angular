@@ -11,11 +11,14 @@
               $scope.fave = FavesService.getFave($scope.faves,$routeParams.faveId);
               }
         });
-
+        //
         $scope.addToFaves = function(shop) {
           FavesService.addToFaves(shop);
           alert('added to faves');
 
+        };
+        $scope.getFaves = function(shop){
+          FavesService.getFaves(shop);
         };
 
     });
