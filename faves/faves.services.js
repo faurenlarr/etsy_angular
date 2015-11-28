@@ -8,7 +8,7 @@
       var url = 'https://tiny-tiny.herokuapp.com/collections/faves';
 
       var addToFaves = function (shop) {
-                 $http.post(url, faves).then(function (res) {
+                 $http.post(url, shop).then(function (res) {
                    console.log(res);
                  });
               };

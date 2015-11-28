@@ -10,8 +10,8 @@ angular
     ])
     .config(function ($routeProvider) {
       $routeProvider
-        
-        .when('/shoplist', {
+
+        .when('/', {
           templateUrl: 'shop/views/list.html',
           controller: 'ShopController'
         })
