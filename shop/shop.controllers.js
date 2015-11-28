@@ -4,7 +4,7 @@
 
   angular
     .module('shop')
-    .controller('ShopController', function($scope, ShopService, $routeParams) {
+    .controller('ShopController', function($scope, ShopService, $routeParams, FavesService) {
         ShopService.getShops().then(function(shops){
             $scope.shops = shops;
             if($routeParams.shopId){
@@ -22,5 +22,9 @@
                   alert('added to faves');
 
                 };
+
+                // $scope.searchByShop = function(shop) {
+                //   ShopService.searchByShop(shop);
+                // };
     });
 }());

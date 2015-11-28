@@ -17,7 +17,7 @@
       };
       var getShop = function(shop){
         return $http.jsonp(urlOptions.buildUrl()).then(function(data){
-          console.log(data.data.results.shop);
+          // console.log(data.data.results.shop);
         });
       };
       var getShops = function(shops){
@@ -27,21 +27,19 @@
       };
 
       var seeDetails = function(shopId){
-        console.log("service",shopId);
+        // console.log("service",shopId);
         return $http.get(urlOptions + "/" + shopId);
       };
 
-      var addToFaves = function (shop) {
-                 $http.post(url, shop).then(function (res) {
-                   console.log(res);
-                 });
-              };
+      // var searchByShop = function(shop){
+      // return $http.get(urlOptions);
+      // };
 
       return {
-        addToFaves: addToFaves,
         getShops : getShops,
         getShop : getShop,
-        seeDetails : seeDetails
+        seeDetails : seeDetails,
+        // searchByShop : searchByShop
       };
     });
 

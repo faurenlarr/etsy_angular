@@ -1,8 +1,18 @@
-<h1>Favorites</h1><a href="#/shoplist">Search by Shop</a><a href="#/"><i class="fa fa-home"></i></a>
 
 
-<section class="container">
-
+<nav class="navbar">
+  <h1>Favorites</h1><a href="#/"><i class="fa fa-home"></i></a>
+</nav>
+<div class="container">
+<div ng-repeat="shop in faves">
+  <section class="box">
+    <img ng-src="{{shop.Shop.image_url_760x100}}" alt="" class="shopimage" /><button ng-click="addToFaves(shop)"><i class="fa fa-heart" ></i></button>
+    <h6 class="shopname">{{shop.Shop.shop_name}}</h6>
+    <h6 class="shoptitle">{{shop.Shop.title}}</h6>
+    <h6 class="shopdeets">{{shop.Shop.policy_welcome}}</h6>
+  </section>
+</div>
+</div>
 
 
 </section>
