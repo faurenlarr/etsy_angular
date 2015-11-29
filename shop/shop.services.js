@@ -31,15 +31,12 @@
         return $http.get(urlOptions + "/" + shopId);
       };
 
-      // var searchByShop = function(shop){
-      // return $http.get(urlOptions);
-      // };
+      
 
       return {
         getShops : getShops,
         getShop : getShop,
         seeDetails : seeDetails,
-        // searchByShop : searchByShop
       };
     });
 

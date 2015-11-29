@@ -15,7 +15,7 @@ angular
           templateUrl: 'shop/views/list.html',
           controller: 'ShopController'
         })
-        .when('/shop/:shopId', {
+        .when('/:shopId', {
           templateUrl: 'shop/views/detail.html',
           controller: 'ShopController'
         })

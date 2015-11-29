@@ -1,30 +1,23 @@
 
 <nav class="navbar">
-  <h1 class='shops'>Shops</h1>
-  <label class="searchbar"><input ng-model="searchText"></label>
+  <h1 class='shops'>Etsy</h1>
+  <label class="searchbar"><input ng-model="searchText" placeholder="search by shop"></label>
+  <a href="#/faveslist" ><i class="fa fa-heart"></i></a>
+  <i class="fa fa-facebook-official"></i>
+  <i class="fa fa-twitter"></i>
+  <i class="fa fa-instagram"></i>
 
-
-    <a href="#/faveslist" ><i class="fa fa-heart"></i></a>
 </nav>
 
-
-<!-- <div class="container">
-  <section class="box"> -->
-    <!-- <img ng-src="{{shop.Shop.image_url_760x100}}" alt="" class="shopimage" /><button ng-click="addToFaves(shop)"><i class="fa fa-heart" ></i></button> -->
-    <!-- <h6 class="shopname">{{shop.Shop.shop_name}}</h6> -->
-  <!-- <button type="text" class="seedetails"><a href="#/shop/{{shop.Shop.shop_id}}">See Details</a></button> -->
-
-  <table id="shop.Shop.shop_id">
-
-    <tr ng-repeat="shop in shops | filter:searchText">
-      <td><h6 class="shopname">{{shop.Shop.shop_name}}</h6></td>
-      <td><img ng-src="{{shop.Shop.image_url_760x100}}" class="shopimage" alt="" /><button ng-click="addToFaves(shop)"><i class="fa fa-heart" ></i></button></td>
-      <td>  <button type="text" class="seedetails"><a href="#/shop/{{shop.Shop.shop_id}}">See Details</a></button></td>
-    </tr>
-  </table>
-<!--
-  </section>
-</div> -->
-
-<!-- <label class="searchbar">Search: <input ng-model="searchText"></label>
-<table id="shop.Shop.shop_id"> -->
+ <table id="shop.Shop.shop_id">
+  <div class="container">
+  <div ng-repeat="shop in shops | filter:searchText">
+    <section class="box">
+      <img ng-src="{{shop.Shop.image_url_760x100}}" alt="" class="shopimage" />
+      <i class="fa fa-heart" ng-click="addToFaves(shop)"></i>
+      <h6 class="shopname">{{shop.Shop.shop_name}}</h6>
+      <button class="seedetails" ng-click="seeDetails(shop)"><a href="#/{{shop._id}}">See Details</a></button>
+    </section>
+  </div>
+  </div>
+</table>

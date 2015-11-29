@@ -23,8 +23,6 @@
 
                 };
 
-                // $scope.searchByShop = function(shop) {
-                //   ShopService.searchByShop(shop);
-                // };
+            
     });
 }());
