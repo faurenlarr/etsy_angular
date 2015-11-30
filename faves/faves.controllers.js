@@ -5,6 +5,7 @@
   angular
     .module('faves')
     .controller('FavesController', function($scope, FavesService, $routeParams) {
+      var vm = this;
         FavesService.getFaves().success(function(faves){
           console.log('thingy: ',faves);
             $scope.faves = faves;
@@ -14,7 +15,7 @@
         });
 
 
-        $scope.getFaves = function(shop){
+        vm.getFaves = function(shop){
           FavesService.getFaves(shop);
         };
 

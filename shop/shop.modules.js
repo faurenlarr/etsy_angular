@@ -13,11 +13,11 @@ angular
 
         .when('/', {
           templateUrl: 'shop/views/list.html',
-          controller: 'ShopController'
+          controller: 'ShopController as shopCtrl'
         })
-        .when('/:shopId', {
+        .when('/shop/:shopId', {
           templateUrl: 'shop/views/detail.html',
-          controller: 'ShopController'
+          controller: 'ShopController as shopCtrl'
         })
         .when('/404', {
           template: '<h1> Sorry, page not found!</h1>'

@@ -11,10 +11,7 @@
     ])
     .config(function ($routeProvider) {
       $routeProvider
-        // .when('/', {
-        //   template: '<h1 class="mainpage">Welcome to Etsy</h1><a href="#/shoplist" class="mainsearch">Search by Shop</a><a href="#/faveslist" class="mainfavorites">Favorites</a>',
-        //   controller: 'EtsyController'
-        // })
+      
         .when('/404', {
           template: '<h1> Sorry, page not found!</h1>'
         })
