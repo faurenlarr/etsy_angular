@@ -27,11 +27,11 @@
       };
 
       var seeDetails = function(shopId){
-        // console.log("service",shopId);
-        return $http.get(urlOptions + "/" + shopId);
-      };
+                console.log("service",shopId);
+                return $http.get(urlOptions + "/" + shopId);
+              };
 
-      
+
 
       return {
         getShops : getShops,

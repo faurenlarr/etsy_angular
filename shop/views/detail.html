@@ -1,5 +1,5 @@
 
-<section class="detail" data-id="{{shop.Shop.shop_id}}">
+<section class="detail" data-id="{{shop.id}}">
   <nav class="navbar">
     <a href="#/faveslist" ><i class="fa fa-heart"></i></a><a href="#/"><i class="fa fa-home"></i></a>
   </nav>
@@ -10,14 +10,14 @@
    <h6 class="shoptitle">{{shop.Shop.title}}</h6>
     <img ng-src="{{shop.Shop.image_url_760x100}}" alt="" class="shopimage" /><button ng-click="addToFaves(shop)"><i class="fa fa-heart" ></i></button>
 <h6 class="details">{{shop.Shop.policy_welcome}}</h6>
-<div ng-repeat="shop in shops" class="otheritems">
+<!-- <div ng-repeat="shop in shops" class="otheritems"> -->
     <section class="oneitem">
     <h6 class="title">title: {{shop.title}}</h6>
     <h6 class="desc">description: {{shop.description}}</h6>
     </section>
 
 
-</div>
+<!-- </div> -->
     </section>
   </div>
   </div>
