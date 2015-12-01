@@ -14,10 +14,6 @@
             //   }
         });
 
-        $scope.removeFromFaves = function(shopId){
-            console.log("SHOP ID",shopId);
-            FavesService.removeFromFaves(shopId);
-          };
 
         vm.getFaves = function(shop){
           FavesService.getFaves(shop);

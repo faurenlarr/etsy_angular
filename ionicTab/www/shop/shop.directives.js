@@ -7,10 +7,11 @@ angular
     return {
       restrict: 'EA',
       templateUrl: 'shop/views/woody.directives.html',
-      controller: "ShopController as shopCtrl",
       link: function (scope, element, attributes) {
-
-     },
+           element.on('click', function(event) {
+             element.css('color', 'red');
+           });
+         },
       scope: {
         shop: "="
       },

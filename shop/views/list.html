@@ -1,17 +1,2 @@
+
 <woody></woody>
-
-
-
-
-<table id="shop.Shop.shop_id">
- <div class="container">
- <div ng-repeat="shop in shopCtrl.shops | filter:searchText">
-   <section class="box">
-     <img ng-src="{{shop.Shop.image_url_760x100}}" alt="" class="shopimage" />
-       <i class="fa fa-heart" ng-click="shopCtrl.addToFaves(shop)"></i>
-     <h6 class="shopname">{{shop.Shop.shop_name}}</h6>
-     <button class="seedetails"><a href="#/shop/{{shop.Shop.shop_id}}">See Details</a></button>
-   </section>
- </div>
- </div>
-</table>

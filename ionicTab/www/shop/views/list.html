@@ -1,20 +1,11 @@
-
-
-<nav class="navbar">
-  <h1 class='shops'>Etsy</h1>
-  <label class="searchbar"><input ng-model="shopCtrl.searchText" placeholder="search by shop"></label>
-  <a href="#/faveslist" ><i class="fa fa-heart"></i></a>
-  <i class="fa fa-facebook-official"></i>
-  <i class="fa fa-twitter"></i>
-  <i class="fa fa-instagram"></i>
-</nav>
+<woody></woody>
 
 
 
 
 <table id="shop.Shop.shop_id">
  <div class="container">
- <div ng-repeat="shop in shopCtrl.shops | filter:shopCtrl.searchText">
+ <div ng-repeat="shop in shopCtrl.shops | filter:searchText">
    <section class="box">
      <img ng-src="{{shop.Shop.image_url_760x100}}" alt="" class="shopimage" />
        <i class="fa fa-heart" ng-click="shopCtrl.addToFaves(shop)"></i>

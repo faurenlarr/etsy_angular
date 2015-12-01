@@ -17,21 +17,10 @@
             return $http.get(url);
             };
 
-            var removeFromFaves= function(shop){
-                    var newUrl = url + "/" + shop;
-                    console.log(newUrl);
-                    $http.delete(newUrl).then(
-                      function(data) {
-                      console.log("SUCCY", data);
-                      },function(data) {
-                      console.log("ERRONEOUS", data);
-                    });
-                  };
 
               return {
                 addToFaves: addToFaves,
-                getFaves: getFaves,
-                removeFromFaves: removeFromFaves
+                getFaves: getFaves
               };
 
 

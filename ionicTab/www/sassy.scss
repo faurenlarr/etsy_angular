@@ -1,9 +1,8 @@
 body {
   // background-color: rgb(51, 138, 148);
+
   color: #e39057;
   font-family: 'Roboto';
-  background-image: url('https://images.unsplash.com/photo-1432821596592-e2c18b78144f?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=3f9c78df0edb464244bbabb04d1797d8');
-  background-size: 1500px 1000px;
 
 }
 // .mainpage {
@@ -56,7 +55,6 @@ a {
 .box {
 
   display: block;
-  opacity: 0.8;
    width: 29%;
   float: right;
   margin: 20px;
@@ -79,7 +77,6 @@ a {
 
 .container {
   width: 98%;
-
 }
 
 
@@ -141,46 +138,17 @@ a {
 
 }
 .detailbox {
-  width: 45%;
-  display: inline-block;
+  width: 50%;
+  display: block;
   // float: right;
   margin: 20px;
   margin-top: 50px;
   border: 2px solid #e39057;
-  height: 400px;
+  height: 300px;
   background-color: #f9f2e5;
   border-radius: 10px;
   overflow: scroll;
 }
 .shopimage {
-  background-color: #e39057;
-
-}
-.deettitle, .deetprice, .deetdescription {
-  margin: 15px;
-}
-.deettitle {
-  font-size: 30px;
-  text-align: center;
-}
-
-.deetprice {
-  text-align: center;
-  font-size: 20px;
-}
-.delete {
-  padding: 10px;
-  margin-left: 20px;
-  border-radius: 10px;
-  background-color: #e39057;
-  border: 2px solid #f0debc;
-  color: white;
-  margin-top: 30px;
-    margin-bottom: 68px;
-    margin-left: 123px;
-  a {
-    color: white;
-    font-size: 15px;
-  }
-
+  background-color: #e39057 ;
 }

@@ -5,7 +5,6 @@
   angular
     .module('shop')
     .controller('ShopController', function($scope, ShopService, $routeParams, FavesService) {
-      console.log('hello');
       var vm = this;
         ShopService.getShops().then(function(shops){
              vm.shops = shops;
@@ -23,7 +22,7 @@
                 title: el.title,
                 description: el.description,
                 price: el.price,
-                image: el.image_url_760x100
+                
               };
             });
             console.log(newThings);
