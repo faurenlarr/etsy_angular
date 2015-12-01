@@ -1,29 +1,23 @@
+<nav class="navbar">
+  <h1 class="detailpage">Items by this shop</h1>
+  <a href="#/faveslist" ><i class="fa fa-heart"></i></a><a href="#/"><i class="fa fa-home"></i></a>
+</nav>
 
-<section class="detail" id="{{shop._id}}">
-  <nav class="navbar">
-    <h1 class="detailpage">Items by this shop</h1>
-    <a href="#/faveslist" ><i class="fa fa-heart"></i></a><a href="#/"><i class="fa fa-home"></i></a>
-  </nav>
-  <div class="container">
-  <div>
-    <section class="box">
-      <div>title: {{shop.title}}</div>
-      <!-- <h6 class="shopname">{{shop.Shop.shop_name}}</h6>
-   <h6 class="shoptitle">{{shop.Shop.title}}</h6>
-    <img ng-src="{{shop.Shop.image_url_760x100}}" alt="" class="shopimage" /><button ng-click="addToFaves(shop)"><i class="fa fa-heart" ></i></button>
-<h6 class="details">{{shop.Shop.policy_welcome}}</h6> -->
-<!-- <div ng-repeat="shop in shops" class="otheritems"> -->
+<div ng-repeat="shop in shopCtrl.shop">
+  <section class="detail" id="{{shop._id}}">
 
-    <!-- <section class="oneitem">
-    <h6 class="title">title: {{shop.title}}</h6>
-    <h6 class="desc">description: {{shop.description}}</h6>
-    </section> -->
+    <div class="container">
+    <div>
+      <section class="box">
+        <img ng-src="" alt="" class="shopimage" />
+        <div class="title">title: {{shop.title}}</div>
+        <div class="description">description: {{shop.description}}</div>
+        <div class="price">${{shop.price}}</div>
+      </section>
+    </div>
+    </div>
 
 
-<!-- </div> -->
     </section>
-  </div>
-  </div>
 
-
-  </section>
+</div>
