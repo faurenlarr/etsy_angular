@@ -9,8 +9,6 @@
 
 
               var seeDetails = function(shopId){
-                        console.log("bunny",shopId);
-
                         return $http.get(url + "/" + shopId);
                       };
 
