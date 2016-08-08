@@ -9,7 +9,6 @@
 
       var addToFaves = function (shop) {
                  $http.post(url, shop).then(function (res) {
-                   console.log(res);
                  });
               };
 
@@ -19,12 +18,9 @@
 
             var removeFromFaves= function(shop){
                     var newUrl = url + "/" + shop;
-                    console.log(newUrl);
                     $http.delete(newUrl).then(
                       function(data) {
-                      console.log("SUCCY", data);
                       },function(data) {
-                      console.log("ERRONEOUS", data);
                     });
                   };
 
